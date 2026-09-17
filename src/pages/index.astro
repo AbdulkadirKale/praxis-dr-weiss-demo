@@ -1,0 +1,666 @@
+---
+import '../styles/global.css';
+---
+
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta
+      name="description"
+      content="Ihre moderne Zahnarztpraxis in München für schmerzfreie Zahnheilkunde, Prophylaxe und Implantologie."
+    />
+    <meta property="og:title" content="Praxis Dr. Weiss | Moderne Zahnheilkunde München" />
+    <meta
+      property="og:description"
+      content="Ihre moderne Zahnarztpraxis in München für schmerzfreie Zahnheilkunde, Prophylaxe und Implantologie."
+    />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>Praxis Dr. Weiss | Moderne Zahnheilkunde München</title>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+    <div class="bg-white">
+      <header class="sticky top-0 z-50 border-b border-slate-100 bg-white/80 backdrop-blur-md">
+        <div class="mx-auto flex max-w-6xl items-center justify-between px-4 py-4 sm:px-6 lg:px-8">
+          <a href="#" class="flex items-center gap-3" aria-label="Praxis Dr. Weiss Startseite">
+            <div class="flex h-11 w-11 items-center justify-center rounded-2xl bg-blue-600 text-white shadow-lg shadow-blue-200">
+              <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <path d="M12 3.5c2.8 0 4.7 1.7 5.2 4.2.4 2.1-.5 4.4-2.1 6.1l-3.1 2.8-3.1-2.8C6.3 12.1 5.4 9.8 5.8 7.7 6.3 5.2 8.2 3.5 12 3.5Z" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/>
+                <path d="M9.5 10.8h5M12 8.2v5.2" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div>
+              <p class="text-lg font-bold tracking-tight text-slate-900">Praxis Dr. Weiss</p>
+              <p class="text-[11px] uppercase tracking-[0.25em] text-slate-500">Zahnmedizin</p>
+            </div>
+          </a>
+
+          <nav class="hidden items-center gap-8 text-sm font-medium text-slate-600 md:flex">
+            <a href="#leistungen" class="relative pb-1 transition-all duration-200 hover:text-slate-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-600 after:transition-transform after:duration-200 after:content-[''] hover:after:scale-x-100">Leistungen</a>
+            <a href="#ueber-uns" class="relative pb-1 transition-all duration-200 hover:text-slate-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-600 after:transition-transform after:duration-200 after:content-[''] hover:after:scale-x-100">Über uns</a>
+            <a href="#team" class="relative pb-1 transition-all duration-200 hover:text-slate-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-600 after:transition-transform after:duration-200 after:content-[''] hover:after:scale-x-100">Team</a>
+            <a href="#kontakt" class="relative pb-1 transition-all duration-200 hover:text-slate-900 after:absolute after:bottom-0 after:left-0 after:h-0.5 after:w-full after:origin-left after:scale-x-0 after:bg-blue-600 after:transition-transform after:duration-200 after:content-[''] hover:after:scale-x-100">Kontakt</a>
+          </nav>
+
+          <button
+            id="menu-toggle"
+            type="button"
+            class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-700 shadow-sm transition md:hidden"
+            aria-expanded="false"
+            aria-label="Menü öffnen"
+          >
+            <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+          </button>
+
+          <a
+            href="#kontakt"
+            class="hidden items-center justify-center rounded-full bg-blue-600 px-5 py-2.5 text-sm font-semibold text-white shadow-lg shadow-blue-200 transition-all duration-200 hover:bg-blue-700 hover:shadow-xl active:scale-95 md:inline-flex"
+          >
+            Termin vereinbaren
+          </a>
+        </div>
+
+        <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white/90 px-4 py-4 md:hidden">
+          <nav class="flex flex-col gap-4 text-sm font-medium text-slate-600">
+            <a href="#leistungen" class="transition hover:text-slate-900">Leistungen</a>
+            <a href="#ueber-uns" class="transition hover:text-slate-900">Über uns</a>
+            <a href="#team" class="transition hover:text-slate-900">Team</a>
+            <a href="#kontakt" class="transition hover:text-slate-900">Kontakt</a>
+            <a href="#kontakt" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-4 py-2.5 font-semibold text-white">Termin vereinbaren</a>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="scroll-mt-24 mx-auto max-w-6xl px-4 pb-16 pt-10 sm:px-6 lg:px-8 lg:pb-24 lg:pt-16">
+          <div class="grid items-center gap-12 lg:grid-cols-[1.12fr_0.88fr]">
+            <div class="max-w-xl hero-fade-in">
+              <div class="mb-6 inline-flex items-center gap-2 rounded-full border border-blue-100 bg-blue-50 px-3 py-1.5 text-sm font-medium text-blue-700">
+                <svg viewBox="0 0 24 24" class="h-4 w-4" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                  <path d="M7 12.5 10 15.5 17 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Moderne Zahnpraxis in München
+              </div>
+
+              <h1 class="text-4xl font-black tracking-[-0.06em] text-slate-900 sm:text-5xl lg:text-7xl">
+                Ihr <span class="text-blue-600">sicheres</span> Lächeln.<br />Ihre <span class="text-blue-600">ruhige</span> Zukunft.
+              </h1>
+
+              <p class="mt-6 max-w-lg text-lg leading-8 text-slate-600">
+                Individuelle Behandlung, modernste Technologien und eine ruhige Atmosphäre – damit Ihre Zahngesundheit ganz ohne Stress wieder in guten Händen ist.
+              </p>
+
+              <div class="mt-8 flex flex-col gap-3 sm:flex-row hero-fade-in-delayed">
+                <a href="#kontakt" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-7 py-3.5 text-base font-semibold text-white shadow-[0_16px_35px_rgba(37,99,235,0.35)] transition-all duration-200 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-[0_20px_40px_rgba(37,99,235,0.4)] active:scale-95">
+                  kostenloses Erstgespräch
+                </a>
+                <a href="#leistungen" class="inline-flex items-center justify-center rounded-full border border-slate-200 bg-white px-7 py-3.5 text-base font-semibold text-slate-700 transition-all duration-200 hover:-translate-y-0.5 hover:border-slate-300 hover:bg-slate-50 hover:shadow-md active:scale-95">
+                  Mehr erfahren
+                </a>
+              </div>
+
+              <div class="mt-8 grid max-w-lg gap-3 sm:grid-cols-3">
+                <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
+                  <p class="text-xl font-black text-slate-900">4.9/5</p>
+                  <p class="mt-1 text-xs text-slate-500">Bewertungen</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
+                  <p class="text-xl font-black text-slate-900">1.170+</p>
+                  <p class="mt-1 text-xs text-slate-500">Patienten</p>
+                </div>
+                <div class="rounded-2xl border border-slate-200 bg-white p-3 shadow-sm">
+                  <p class="text-xl font-black text-slate-900">15+</p>
+                  <p class="mt-1 text-xs text-slate-500">Jahre Erfahrung</p>
+                </div>
+              </div>
+
+              <div class="mt-8 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-slate-500">
+                <div class="inline-flex items-center gap-2">
+                  <span class="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+                    <svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M7 12.5 10 15.5 17 8.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </span>
+                  Zertifizierte Qualität
+                </div>
+                <div class="inline-flex items-center gap-2">
+                  <span class="flex h-6 w-6 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
+                    <svg viewBox="0 0 24 24" class="h-3.5 w-3.5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M12 3v18M3 12h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                  </span>
+                  Flexible Termine
+                </div>
+              </div>
+            </div>
+
+            <div class="relative">
+              <div class="absolute -left-5 top-12 z-20 hidden rounded-2xl border border-slate-200 bg-white p-4 shadow-xl shadow-slate-200/80 md:block">
+                <div class="flex items-center gap-3">
+                  <div class="flex h-10 w-10 items-center justify-center rounded-full bg-blue-100 text-blue-600">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="m12 3.5 2.5 5.2 5.7.8-4.1 4 1 5.7-5.1-2.7-5.1 2.7 1-5.7-4.1-4 5.7-.8L12 3.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-xl font-bold text-slate-900">4.9/5</p>
+                    <p class="text-xs text-slate-500">Bewertungen</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="relative overflow-hidden rounded-[32px] border border-slate-200 bg-gradient-to-br from-blue-50 via-white to-sky-50 p-3 shadow-[0_35px_90px_rgba(15,23,42,0.12)] sm:p-5">
+                <img
+                  src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=900&q=80"
+                  alt="Zahnarztpraxis mit modernen Behandlungseinheiten"
+                  class="h-[520px] w-full rounded-[26px] object-cover object-center"
+                />
+                <div class="absolute inset-x-5 bottom-5 rounded-[24px] border border-white/20 bg-slate-900/75 p-4 text-white backdrop-blur-sm">
+                  <div class="flex items-center justify-between gap-4">
+                    <div>
+                      <p class="text-xs uppercase tracking-[0.25em] text-slate-300">Praxis Dr. Weiss</p>
+                      <p class="mt-2 text-2xl font-bold">Gesundheit mit Vertrauen</p>
+                    </div>
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-blue-500/20 text-blue-200">
+                      <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M9 5.5a3 3 0 0 1 6 0M12 13c-3.5 0-6.5 2.5-6.5 6.5h13C18.5 15.5 15.5 13 12 13Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="absolute -bottom-6 right-3 rounded-2xl border border-slate-200 bg-white p-4 shadow-xl shadow-slate-200/80 md:right-6">
+                <p class="text-3xl font-black text-slate-900">12.400+</p>
+                <p class="text-sm text-slate-500">Erfolgreiche Behandlungen</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="mx-auto max-w-6xl px-4 pb-8 pt-2 sm:px-6 lg:px-8">
+          <div class="grid gap-4 rounded-[30px] border border-slate-200 bg-white p-4 shadow-[0_20px_50px_rgba(15,23,42,0.05)] sm:grid-cols-2 lg:grid-cols-4">
+            <div class="rounded-[22px] bg-slate-50 p-5">
+              <p class="text-xs font-bold uppercase tracking-[0.22em] text-blue-600">Qualität</p>
+              <p class="mt-3 text-2xl font-black text-slate-900">Modern</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Digitale Diagnostik und moderne, sichere Behandlungswege.</p>
+            </div>
+            <div class="rounded-[22px] bg-blue-50 p-5">
+              <p class="text-xs font-bold uppercase tracking-[0.22em] text-blue-600">Vertrauen</p>
+              <p class="mt-3 text-2xl font-black text-slate-900">4.9/5</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Starke Bewertungen und ein persönlicher, ruhiger Behandlungsstil.</p>
+            </div>
+            <div class="rounded-[22px] bg-emerald-50 p-5">
+              <p class="text-xs font-bold uppercase tracking-[0.22em] text-emerald-700">Flexibel</p>
+              <p class="mt-3 text-2xl font-black text-slate-900">Schnell</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Zuverlässige Terminvorschläge und kompakte Behandlungspfade.</p>
+            </div>
+            <div class="rounded-[22px] bg-violet-50 p-5">
+              <p class="text-xs font-bold uppercase tracking-[0.22em] text-violet-700">Persönlich</p>
+              <p class="mt-3 text-2xl font-black text-slate-900">Individuell</p>
+              <p class="mt-2 text-sm leading-6 text-slate-600">Jede Behandlung wird auf Ihre Bedürfnisse und Ihr Lächeln abgestimmt.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="ueber-uns" class="scroll-mt-24 mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
+          <div class="grid items-center gap-10 lg:grid-cols-[1fr_1fr]">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">Über uns</p>
+              <h2 class="mt-3 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">Mehr als Zahnmedizin – eine ruhige Praxis für langfristige Gesundheit</h2>
+              <p class="mt-5 text-lg leading-8 text-slate-600">
+                In unserer Praxis Dr. Weiss verbinden wir moderne Zahnmedizin mit persönlicher Betreuung, klaren Behandlungsempfehlungen und einer Atmosphäre, die Sicherheit schafft. Jede Behandlung wird individuell an Ihre Bedürfnisse angepasst – mit Fokus auf Prävention, Ästhetik und nachhaltige Ergebnisse.
+              </p>
+
+              <div class="mt-8 space-y-4">
+                <div class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-50 text-blue-600">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M7 15V9m5 6V5m5 10v-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold text-slate-900">Moderne Technologie</h3>
+                    <p class="mt-1 text-sm text-slate-600">Digitale Diagnostik, 3D-Röntgen und moderne Behandlungsmethoden für präzise Ergebnisse.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M12 21s6-4.8 6-10A6 6 0 1 0 6 11c0 5.2 6 10 6 10Z" stroke="currentColor" stroke-width="1.8"/>
+                      <path d="M9.5 12.5 11 14l3.5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold text-slate-900">Schmerzfreie Behandlung</h3>
+                    <p class="mt-1 text-sm text-slate-600">Sanfte Verfahren und gut strukturierte Behandlungspläne sorgen für mehr Ruhe und Vertrauen.</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-violet-50 text-violet-600">
+                    <svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M6 18.5V9.8A2.8 2.8 0 0 1 8.8 7h6.4A2.8 2.8 0 0 1 18 9.8v8.7" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                      <path d="M9 7V5.8A3 3 0 0 1 12 3a3 3 0 0 1 3 2.8V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 class="text-lg font-bold text-slate-900">Wohlfühlatmosphäre</h3>
+                    <p class="mt-1 text-sm text-slate-600">Eine freundliche, ruhige Umgebung, die auch bei Angst vor Behandlungen ein Gefühl von Sicherheit vermittelt.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="overflow-hidden rounded-[32px] border border-slate-200 bg-gradient-to-br from-slate-900 via-slate-800 to-blue-900 p-7 shadow-[0_30px_80px_rgba(15,23,42,0.12)]">
+              <div class="rounded-[28px] border border-white/10 bg-white/5 p-6 backdrop-blur-sm">
+                <div class="flex items-center justify-between">
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.25em] text-blue-200">Praxisprofil</p>
+                    <h3 class="mt-2 text-2xl font-bold text-white">Patientenorientiert. Präzise. Vertrauensvoll.</h3>
+                  </div>
+                </div>
+
+                <div class="mt-8 grid gap-4 sm:grid-cols-2">
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p class="text-3xl font-black text-white">15+</p>
+                    <p class="mt-2 text-sm text-slate-200">Jahre Erfahrung</p>
+                  </div>
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p class="text-3xl font-black text-white">5.000+</p>
+                    <p class="mt-2 text-sm text-slate-200">Zufriedene Patienten</p>
+                  </div>
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p class="text-3xl font-black text-white">3D</p>
+                    <p class="mt-2 text-sm text-slate-200">Digitale Diagnostik</p>
+                  </div>
+                  <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                    <p class="text-3xl font-black text-white">24/7</p>
+                    <p class="mt-2 text-sm text-slate-200">Notfallberatung</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="leistungen" class="scroll-mt-24 bg-slate-50 py-24">
+          <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-10 text-center">
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">Leistungen</p>
+              <h2 class="mt-3 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">Umfassende Zahnmedizin für Ihr Lächeln</h2>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
+              <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-100/70">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-50 text-blue-600 transition group-hover:bg-blue-600 group-hover:text-white">
+                  <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M8 9.8c0-2.2 1.7-4 4-4s4 1.8 4 4v4.7c0 2.7-1.8 4.5-4 4.5s-4-1.8-4-4.5V9.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M9 9.5h6M12 5.5v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3 class="mt-5 text-xl font-bold text-slate-900">Professionelle Zahnreinigung</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-600">Sanfte, gründliche Reinigung zur Vorbeugung von Karies und Zahnfleischentzündungen.</p>
+              </article>
+
+              <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-100/70">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-violet-50 text-violet-600 transition group-hover:bg-violet-600 group-hover:text-white">
+                  <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M12 3.2c1.8 3 6 4.2 6 8.7 0 3.4-2.7 6.8-6 8.9-3.3-2.1-6-5.5-6-8.9 0-4.5 4.2-5.7 6-8.7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M9.5 12.5 11 14l3.5-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+                <h3 class="mt-5 text-xl font-bold text-slate-900">Ästhetische Zahnheilkunde</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-600">Bleaching, Veneers und individuelle kosmetische Lösungen für ein natürliches, strahlendes Lächeln.</p>
+              </article>
+
+              <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-100/70">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-50 text-emerald-600 transition group-hover:bg-emerald-600 group-hover:text-white">
+                  <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7.5 9.8c0-3.3 2.2-5.3 4.5-5.3s4.5 2 4.5 5.3c0 3.4-2.7 5.3-4.5 8.8-1.8-3.5-4.5-5.4-4.5-8.8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M12 7.5v5.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3 class="mt-5 text-xl font-bold text-slate-900">Implantologie</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-600">Stabile, langlebige Implantate für Funktion, Komfort und ästhetische Sicherheit.</p>
+              </article>
+
+              <article class="group rounded-3xl border border-slate-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-100/70">
+                <div class="flex h-14 w-14 items-center justify-center rounded-2xl bg-amber-50 text-amber-600 transition group-hover:bg-amber-500 group-hover:text-white">
+                  <svg viewBox="0 0 24 24" class="h-7 w-7" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M7 15.5c0-2.8 2.2-5 5-5s5 2.2 5 5v1.5H7v-1.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    <path d="M9 8.5C9 6.6 10.3 5 12 5s3 1.6 3 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                    <path d="M12 9.5v4.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <h3 class="mt-5 text-xl font-bold text-slate-900">Parodontologie</h3>
+                <p class="mt-3 text-sm leading-6 text-slate-600">Vorbeugung und Behandlung von Zahnfleischerkrankungen mit individueller Betreuung.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="team" class="scroll-mt-24 bg-slate-50 py-24">
+          <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+            <div class="mb-10 text-center">
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">Ärzteteam</p>
+              <h2 class="mt-3 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">Erfahrene Hände. Persönliche Begleitung.</h2>
+            </div>
+
+            <div class="grid gap-6 md:grid-cols-3">
+              <article class="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-100/70">
+                <div class="h-56 bg-gradient-to-br from-sky-100 via-white to-blue-100 p-6">
+                  <div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full bg-white text-xl font-bold text-slate-700 shadow-md">MW</div>
+                </div>
+                <div class="p-6">
+                  <p class="text-xs font-semibold uppercase tracking-[0.22em] text-blue-600">Implantologie</p>
+                  <h3 class="mt-3 text-2xl font-bold text-slate-900">Dr. med. dent. Michael Weiss</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-600">Mit Fokus auf moderne Implantatversorgung, ästhetische Rekonstruktionen und langanhaltende Stabilität.</p>
+                </div>
+              </article>
+
+              <article class="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-100/70">
+                <div class="h-56 bg-gradient-to-br from-violet-100 via-white to-indigo-100 p-6">
+                  <div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full bg-white text-xl font-bold text-slate-700 shadow-md">SL</div>
+                </div>
+                <div class="p-6">
+                  <p class="text-xs font-semibold uppercase tracking-[0.22em] text-violet-600">Kieferorthopädie</p>
+                  <h3 class="mt-3 text-2xl font-bold text-slate-900">Dr. Sarah Lindner</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-600">Spezialisiert auf kieferorthopädische Behandlungen mit individueller Planung und sichtbaren Ergebnissen.</p>
+                </div>
+              </article>
+
+              <article class="overflow-hidden rounded-[28px] border border-slate-200 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl hover:shadow-blue-100/70">
+                <div class="h-56 bg-gradient-to-br from-emerald-100 via-white to-cyan-100 p-6">
+                  <div class="mx-auto flex h-32 w-32 items-center justify-center rounded-full bg-white text-xl font-bold text-slate-700 shadow-md">EW</div>
+                </div>
+                <div class="p-6">
+                  <p class="text-xs font-semibold uppercase tracking-[0.22em] text-emerald-600">Prophylaxe</p>
+                  <h3 class="mt-3 text-2xl font-bold text-slate-900">Elena Weber</h3>
+                  <p class="mt-2 text-sm leading-6 text-slate-600">Berät Patienten zu Prävention, Hygiene und langfristiger Zahngesundheit mit viel Geduld und Klarheit.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="scroll-mt-24 mx-auto mt-20 max-w-4xl px-4 pb-24 sm:px-6 lg:px-8">
+          <div class="mb-8 text-center">
+            <p class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-600">FAQ</p>
+            <h2 class="mt-3 text-3xl font-black tracking-tight text-slate-900 sm:text-4xl">Häufige Fragen</h2>
+          </div>
+
+          <div class="space-y-4">
+            <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 open:shadow-md" open>
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+                <span class="text-lg font-bold text-slate-900">Wie läuft ein erster Termin ab?</span>
+                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition-colors duration-200 group-hover:bg-blue-50 group-hover:text-blue-600">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform duration-300 group-open:rotate-180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M6 9.5 12 15.5 18 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </summary>
+              <div class="mt-4 border-t border-slate-200 pt-5">
+                <p class="text-sm leading-7 text-slate-600">Nach Ihrer Anfrage vereinbaren wir einen Termin. In der Erstberatung analysieren wir Ihren Ist-Zustand, klären Wünsche und erstellen einen individuellen Behandlungsplan.</p>
+              </div>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 open:shadow-md">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+                <span class="text-lg font-bold text-slate-900">Gibt es auch Notfalldienste?</span>
+                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition-colors duration-200 group-hover:bg-blue-50 group-hover:text-blue-600">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform duration-300 group-open:rotate-180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M6 9.5 12 15.5 18 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </summary>
+              <div class="mt-4 border-t border-slate-200 pt-5">
+                <p class="text-sm leading-7 text-slate-600">Ja. Bei akuten Beschwerden oder Schmerzsituationen steht Ihnen unser Notdienst zur Unterstützung bereit. Bitte kontaktieren Sie uns direkt telefonisch.</p>
+              </div>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 open:shadow-md">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+                <span class="text-lg font-bold text-slate-900">Nehmen Sie Kassen- und Privatpatienten auf?</span>
+                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition-colors duration-200 group-hover:bg-blue-50 group-hover:text-blue-600">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform duration-300 group-open:rotate-180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M6 9.5 12 15.5 18 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </summary>
+              <div class="mt-4 border-t border-slate-200 pt-5">
+                <p class="text-sm leading-7 text-slate-600">Ja. Wir behandeln sowohl Kassen- als auch Privatpatienten und beraten Sie gerne zur passenden Versorgung und Abrechnung.</p>
+              </div>
+            </details>
+
+            <details class="group rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all duration-200 open:shadow-md">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-4 text-left">
+                <span class="text-lg font-bold text-slate-900">Wie schnell bekomme ich einen Termin?</span>
+                <span class="flex h-8 w-8 items-center justify-center rounded-full bg-slate-100 text-slate-600 transition-colors duration-200 group-hover:bg-blue-50 group-hover:text-blue-600">
+                  <svg viewBox="0 0 24 24" class="h-4 w-4 transition-transform duration-300 group-open:rotate-180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M6 9.5 12 15.5 18 9.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </span>
+              </summary>
+              <div class="mt-4 border-t border-slate-200 pt-5">
+                <p class="text-sm leading-7 text-slate-600">In der Regel innerhalb von wenigen Tagen. Bei dringenden Anliegen bemühen wir uns um eine schnelle Terminvergabe.</p>
+              </div>
+            </details>
+          </div>
+        </section>
+
+        <section id="kontakt" class="scroll-mt-24 mx-auto max-w-6xl px-4 py-24 sm:px-6 lg:px-8">
+          <div class="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
+            <div class="rounded-[32px] bg-slate-900 p-8 text-white shadow-[0_24px_70px_rgba(15,23,42,0.12)]">
+              <p class="text-sm font-semibold uppercase tracking-[0.25em] text-blue-300">Kontakt & Termin</p>
+              <h2 class="mt-4 text-3xl font-black tracking-tight">Wir freuen uns auf Sie</h2>
+
+              <div class="mt-8 space-y-6 text-slate-200">
+                <div class="flex gap-4">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-blue-300">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M12 21s6-5.9 6-11A6 6 0 1 0 6 10c0 5.1 6 11 6 11Z" stroke="currentColor" stroke-width="1.8"/>
+                      <circle cx="12" cy="10" r="2.5" stroke="currentColor" stroke-width="1.8"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Adresse</p>
+                    <a
+                      href="https://maps.google.com/?q=M%C3%BCnchner+Stra%C3%9Fe+24,+80331+M%C3%BCnchen"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="mt-1 block text-base transition hover:text-white"
+                    >
+                      Münchner Straße 24, 80331 München
+                    </a>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-blue-300">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <path d="M5 5.5h3l1.2 4.5-1.7 1.7a14 14 0 0 0 7.5 7.5l1.7-1.7L18.5 16v3a2 2 0 0 1-2 2C10.3 21 3 13.7 3 7.5a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Telefon</p>
+                    <a href="tel:+498912345678" class="mt-1 block text-base transition hover:text-white">+49 (0) 89 123 45 678</a>
+                  </div>
+                </div>
+
+                <div class="flex gap-4">
+                  <div class="flex h-12 w-12 items-center justify-center rounded-2xl bg-white/5 text-blue-300">
+                    <svg viewBox="0 0 24 24" class="h-5 w-5" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                      <rect x="3" y="5" width="18" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/>
+                      <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm uppercase tracking-[0.2em] text-slate-400">E-Mail</p>
+                    <a href="mailto:info@praxis-dr-weiss.de" class="mt-1 block text-base transition hover:text-white">info@praxis-dr-weiss.de</a>
+                  </div>
+                </div>
+
+                <div class="rounded-2xl border border-white/10 bg-white/5 p-4">
+                  <p class="text-sm uppercase tracking-[0.2em] text-slate-400">Öffnungszeiten</p>
+                  <ul class="mt-3 space-y-2 text-sm text-slate-200">
+                    <li class="flex items-center justify-between"><span>Mo – Do</span><span>08:00 – 18:00</span></li>
+                    <li class="flex items-center justify-between"><span>Freitag</span><span>08:00 – 15:00</span></li>
+                    <li class="flex items-center justify-between"><span>Samstag</span><span>Nach Vereinbarung</span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="rounded-[32px] border border-slate-200 bg-white p-8 shadow-[0_24px_70px_rgba(15,23,42,0.06)]">
+              <div class="mb-6 flex items-center gap-3">
+                <span class="inline-flex items-center justify-center rounded-full bg-blue-100 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.22em] text-blue-700">Kontakt</span>
+                <p class="text-sm font-semibold uppercase tracking-[0.2em] text-blue-600">Anfrage</p>
+              </div>
+
+              <h3 class="mt-3 text-3xl font-black tracking-tight text-slate-900">Kostenlose Erstberatung anfragen</h3>
+
+              <form id="appointment-form" class="mt-6 space-y-5">
+                <div class="grid gap-5 sm:grid-cols-2">
+                  <label class="block">
+                    <span class="mb-2 block text-sm font-medium text-slate-700">Name</span>
+                    <input type="text" name="name" placeholder="Max Mustermann" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-100" />
+                  </label>
+
+                  <label class="block">
+                    <span class="mb-2 block text-sm font-medium text-slate-700">E-Mail</span>
+                    <input type="email" name="email" placeholder="max@email.de" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-100" />
+                  </label>
+                </div>
+
+                <div class="grid gap-5 sm:grid-cols-2">
+                  <label class="block">
+                    <span class="mb-2 block text-sm font-medium text-slate-700">Behandlung / Leistung</span>
+                    <select name="service" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-100">
+                      <option value="">Bitte wählen</option>
+                      <option>Professionelle Zahnreinigung</option>
+                      <option>Ästhetische Zahnheilkunde</option>
+                      <option>Implantologie</option>
+                      <option>Parodontologie</option>
+                    </select>
+                  </label>
+
+                  <label class="block">
+                    <span class="mb-2 block text-sm font-medium text-slate-700">Wunschtermin</span>
+                    <input type="date" name="date" required class="w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 text-slate-900 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-100" />
+                  </label>
+                </div>
+
+                <button type="submit" class="inline-flex w-full items-center justify-center rounded-full bg-blue-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-blue-200 transition-all duration-200 hover:bg-blue-700 hover:shadow-xl active:scale-95">
+                  Anfrage senden
+                </button>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <div id="cookie-banner" class="fixed inset-x-4 bottom-4 z-50 mx-auto max-w-xl rounded-2xl border border-slate-200 bg-white/90 p-4 shadow-2xl shadow-slate-200/80 backdrop-blur-md">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <p class="text-sm leading-6 text-slate-600">
+            Wir verwenden notwendige Cookies, um die beste Nutzererfahrung zu gewährleisten.
+          </p>
+          <button id="cookie-accept" type="button" class="inline-flex items-center justify-center rounded-full bg-blue-600 px-4 py-2 text-sm font-semibold text-white transition hover:bg-blue-700">
+            Akzeptieren
+          </button>
+        </div>
+      </div>
+
+      <div id="form-toast" class="pointer-events-none fixed bottom-6 right-6 z-50 translate-y-4 rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white opacity-0 shadow-xl shadow-slate-300/30 transition-all duration-300">
+        Vielen Dank! Ihre Anfrage wurde empfangen.
+      </div>
+
+      <footer class="border-t border-slate-200 bg-slate-50">
+        <div class="mx-auto flex max-w-6xl flex-col gap-6 px-4 py-8 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+          <div>
+            <p class="text-lg font-bold text-slate-900">Praxis Dr. Weiss</p>
+            <p class="mt-1 text-sm text-slate-500">© 2026 Alle Rechte vorbehalten.</p>
+          </div>
+
+          <div class="flex items-center gap-4 text-sm text-slate-600">
+            <a href="#" class="transition hover:text-slate-900">Instagram</a>
+            <a href="#" class="transition hover:text-slate-900">Facebook</a>
+            <a href="#" class="transition hover:text-slate-900">LinkedIn</a>
+          </div>
+        </div>
+
+        <div class="border-t border-slate-200 bg-white">
+          <div class="mx-auto flex max-w-6xl flex-col gap-3 px-4 py-4 text-sm text-slate-500 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+            <p>Praxis Dr. Weiss • Zahnmedizin • München</p>
+            <div class="flex flex-wrap items-center gap-4">
+              <a href="#" class="transition hover:text-slate-900">Impressum</a>
+              <a href="#" class="transition hover:text-slate-900">Datenschutz</a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    if (menuToggle && mobileMenu) {
+      menuToggle.addEventListener('click', () => {
+        const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+        menuToggle.setAttribute('aria-expanded', String(!isExpanded));
+        mobileMenu.classList.toggle('hidden');
+      });
+
+      mobileMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          menuToggle.setAttribute('aria-expanded', 'false');
+        });
+      });
+    }
+
+    const cookieBanner = document.getElementById('cookie-banner');
+    const cookieAccept = document.getElementById('cookie-accept');
+
+    if (cookieBanner && cookieAccept) {
+      const isAccepted = localStorage.getItem('cookieConsentAccepted');
+      if (isAccepted === 'true') {
+        cookieBanner.classList.add('hidden');
+      }
+
+      cookieAccept.addEventListener('click', () => {
+        localStorage.setItem('cookieConsentAccepted', 'true');
+        cookieBanner.classList.add('hidden');
+      });
+    }
+
+    const appointmentForm = document.getElementById('appointment-form');
+    const formToast = document.getElementById('form-toast');
+
+    if (appointmentForm && formToast) {
+      appointmentForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        if (!appointmentForm.checkValidity()) {
+          appointmentForm.reportValidity();
+          return;
+        }
+
+        formToast.classList.remove('opacity-0', 'translate-y-4');
+        formToast.classList.add('opacity-100', 'translate-y-0');
+        appointmentForm.reset();
+
+        window.setTimeout(() => {
+          formToast.classList.add('opacity-0', 'translate-y-4');
+          formToast.classList.remove('opacity-100', 'translate-y-0');
+        }, 2600);
+      });
+    }
+  </script>
+  </body>
+</html>

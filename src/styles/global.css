@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+@keyframes fadeUp {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hero-fade-in {
+  animation: fadeUp 0.7s ease-out both;
+}
+
+.hero-fade-in-delayed {
+  animation: fadeUp 0.9s ease-out 0.1s both;
+}
+
+html {
+  scroll-behavior: smooth;
+}
