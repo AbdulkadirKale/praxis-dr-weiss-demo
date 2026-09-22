@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# local assistant tooling
+.claude/
+*claude-notify-signals*

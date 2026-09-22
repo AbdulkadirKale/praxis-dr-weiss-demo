@@ -1,26 +1,44 @@
-# Praxis Dr. Weiss – Zahnmedizin München
+# Praxis Dr. Weiss
 
-> A high-performance, modern landing page concept designed for healthcare and dental practices in the DACH region.
+Landing page for a dental practice in Munich. Built with Astro and Tailwind CSS.
 
-## 🔗 Live Demo
-- **Live Preview:** [praxis-dr-weiss-demo.vercel.app](https://praxis-dr-weiss-demo.vercel.app)
-- **Repository:** [github.com/AbdulkadirKale/praxis-dr-weiss-demo](https://github.com/AbdulkadirKale/praxis-dr-weiss-demo)
+**Live:** [praxis-dr-weiss-demo.vercel.app](https://praxis-dr-weiss-demo.vercel.app)
 
----
+## Stack
 
-## 📌 Project Overview
-This project is an open-source showcase built to demonstrate modern web standards for local medical clinics. The primary focus is providing near-instant load speeds, accessible typography, GDPR (DSGVO) compliance structures, and a mobile-first appointment booking experience.
+| Layer      | Technology     |
+| ---------- | -------------- |
+| Framework  | Astro 7        |
+| Styling    | Tailwind CSS 4 |
+| Deployment | Vercel         |
 
-## ✨ Key Features
-- **Mobile-First UX:** Fully responsive layout with intuitive navigation and click-to-call direct links.
-- **Conversion-Focused Structure:** Dedicated appointment request flow, interactive services showcase, team profiles, and accordion FAQs.
-- **German Market Compliance:** Integrated structures for DSGVO-ready Impressum, Datenschutz notices, and a clean cookie consent banner.
-- **Performance & SEO:** Optimized Core Web Vitals with semantic HTML, native SVG icons, and zero heavy client-side JavaScript dependencies.
+## Structure
 
-## 🛠️ Tech Stack
-- **Framework:** Astro
-- **Styling:** Tailwind CSS v4
-- **Deployment:** Vercel
+```
+src/
+├── components/   Header.astro, Footer.astro
+├── layouts/      Layout.astro — page shell, meta tags
+├── pages/        index, impressum, datenschutz
+└── styles/       global.css — Tailwind entry point
+```
 
----
-*Note: This is a concept showcase created for portfolio and demonstration purposes.*
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```
+
+The site runs at `http://localhost:4321`.
+
+## Scripts
+
+| Command           | Description                   |
+| ------------------ | ------------------------------ |
+| `npm run dev`      | Start the dev server           |
+| `npm run build`    | Build for production           |
+| `npm run preview`  | Preview the production build   |
+
+## Notes
+
+`/impressum` and `/datenschutz` currently hold placeholder text and need a legal review with real business data before going live.
