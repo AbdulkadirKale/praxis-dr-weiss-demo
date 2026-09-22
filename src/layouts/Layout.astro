@@ -1,0 +1,36 @@
+---
+import '../styles/global.css';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'Praxis Dr. Weiss | Moderne Zahnheilkunde München',
+  description = 'Ihre moderne Zahnarztpraxis in München für schmerzfreie Zahnheilkunde, Prophylaxe und Implantologie.',
+} = Astro.props;
+---
+
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2563eb" />
+    <meta name="description" content={description} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen bg-slate-50 text-slate-900 antialiased">
+    <div class="bg-white">
+      <Header />
+      <slot />
+      <Footer />
+    </div>
+  </body>
+</html>
